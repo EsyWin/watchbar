@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="App-header">
       <img
-        src="https://raw.githubusercontent.com/EsyWin/watchbar/main/public/img/watchbar_white.png"
+        src="https://raw.githubusercontent.com/EsyWin/watchbar/main/public/img/watchbar_mini.png"
         className="App-logo"
         alt="logo"
       />

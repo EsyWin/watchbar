@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;800&display=swap");
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  width: 100vw;
+  height: 100vh;
   color: #eee;
   background-color: #333;
   display: flex;
@@ -28,7 +38,7 @@ body {
 }
 
 .App-logo {
-  height: 420px;
+  max-height: 10vh;
   pointer-events: none;
 }
 
