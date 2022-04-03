@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;800&family=Urbanist:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;800&family=Urbanist:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   font-family: "Urbanist", sans-serif;
   font-size: 0.781rem;
+  font-weight: 300;
   text-shadow: #000 1.1px 1.1px 1.1px;
 
   a,
@@ -25,6 +26,7 @@ body {
     color: #e00;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 400;
   }
 
   .App-link {
@@ -89,6 +91,7 @@ body {
       width: 100%;
       border-top: 1px solid black;
       border-right: 1px solid black;
+      padding: 1.1px;
     }
 
     tr:last-of-type {
@@ -100,6 +103,7 @@ body {
       text-transform: uppercase;
       border-right: 1px solid black;
       border-top: 1px solid black;
+      padding: 1.1px;
     }
 
     td {
@@ -122,5 +126,20 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
+  }
+
+  .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
   }
 }

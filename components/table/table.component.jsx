@@ -6,7 +6,7 @@ class Table extends React.Component {
     super();
 
     this.state = {
-      list: [],
+      tokenList: [],
       tokens: [],
       baseURL: "https://mainnet-public.mirrornode.hedera.com/api/v1/tokens",
     };
