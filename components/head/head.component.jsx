@@ -19,6 +19,25 @@ const Header = () => {
           key="title"
         />
       </Head>
+      <Head>
+        <meta property="og:url" content="https://watchbar.space" />
+      </Head>
+      <Head>
+        <meta property="og:site_name" content="watchbar" />
+      </Head>
+      <Head>
+        <meta
+          property="og:description"
+          content="hedera, hashgraph, hedera-hashgraph, hbar, analytics"
+        />
+      </Head>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/esywin/watchbar/main/public/img/hello-data_mini.jpg"
+          key="embed"
+        />
+      </Head>
     </div>
   );
 };
