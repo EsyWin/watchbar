@@ -6,7 +6,7 @@ function Homepage(props) {
   return (
     <div>
       <Header />
-      <h1>Welcome to {props.blogTitle}!</h1>
+      <h1 className="text-center">{props.blogTitle}!</h1>
     </div>
   );
 }
