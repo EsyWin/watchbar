@@ -112,6 +112,14 @@ body {
     font-size: 0.781rem;
   }
 
+  td+#tokenId {
+    text-decoration: underline;
+  }
+
+  td+#tokenId :hover {
+    color: rgb(17, 87, 145);
+  }
+
   h1.symbol {
     font-size: 0.781rem;
   }
