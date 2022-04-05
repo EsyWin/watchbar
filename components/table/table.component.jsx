@@ -35,7 +35,7 @@ class Table extends React.Component {
         <thead>
           <tr>
             {/* <th>#</th> */}
-            <th id="rank">Rank</th>
+            <th id="rank">#</th>
             <th id="symbol">Symbol</th>
             <th id="price">Price</th>
             <th id="tokenId">Token id</th>
@@ -56,7 +56,6 @@ class Table extends React.Component {
               <tr key={token.token_id}>
                 {/* <td>#</td> */}
                 <td id="rank"></td>
-
                 <td id="symbol" className="symbol">{token["symbol"]}</td>
                 <td id="price"></td>
                 <td id="tokenId" className="tokenId">

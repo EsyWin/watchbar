@@ -12,7 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #eee;
-  background-color: #1d2834;
+  background-color: #080808;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ body {
 
   a,
   a:visited {
-    color: #e00;
+    color: rgb(24, 133, 223);
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
@@ -71,6 +71,10 @@ body {
     text-align: center;
   }
 
+  #rank {
+    width: 2em;
+  }
+
   .Table-Container {
     justify-content: center;
     align-items: center;
@@ -79,10 +83,9 @@ body {
   }
 
   table {
-    border: 1px solid #e00;
     text-align: center;
     border-collapse: collapse;
-    padding: 11px;
+    padding: 15px;
     flex-direction: column;
   }
 
@@ -93,13 +96,15 @@ body {
 
   td,
   th {
-    border: 1px solid black;
-    padding: 1.1px;
+    // border: 1px solid rgb(255, 253, 253);
+    padding: 13px;
+    border-bottom: 1px solid rgb(80, 79, 79);
   }
 
   th {
+    font-size: 15px;
     text-transform: uppercase;
-    padding: 1.1px;
+    padding: 2px;
   }
 
   td {
