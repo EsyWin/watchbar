@@ -33,8 +33,6 @@ body {
     color: rgb(30, 96, 182)
   }
 
-
-
   .App-link {
     font-weight: 800;
     color: #e00;
@@ -118,6 +116,10 @@ body {
   td {
     width: 111px;
     font-size: 0.781rem;
+  }
+
+  tbody tr:hover {
+    background-color: #0c0c0c;
   }
 
   td+#tokenId {
