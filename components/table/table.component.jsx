@@ -44,7 +44,6 @@ class Table extends React.Component {
             <th id="mSupply">Max supply</th>
             <th id="cSupply">Circulating supply</th>
             <th id="holders">Holders</th>
-            <th id="decimals">Decimals</th>
             <th id="txns">Transfers</th>
             {/* <th>supply</th> */}
           </tr>
@@ -74,7 +73,6 @@ class Table extends React.Component {
                 <td id="mSupply"></td>
                 <td id="cSupply"></td>
                 <td id="holders"></td>
-                <td id="decimals"></td>
                 <td id="txns"></td>
               </tr>
             );

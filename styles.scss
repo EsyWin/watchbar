@@ -9,12 +9,12 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #eee;
   background: linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(11, 11, 11, 1) 47%, rgba(3, 3, 3, 1) 100%);
   display: flex;
-  justify-content: center;
+  justify-content: safe;
   align-items: center;
   flex-direction: column;
   font-family: "Urbanist", sans-serif;
@@ -23,14 +23,14 @@ body {
   text-shadow: #000 1.1px 1.1px 1.1px;
 
   a {
-    color: rgb(39, 122, 231);
+    color: rgb(151, 154, 160);
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
   }
 
   a:hover {
-    color: rgb(30, 96, 182)
+    color: rgb(128, 130, 134)
   }
 
   .App-link {
@@ -52,11 +52,11 @@ body {
   }
 
   .App-header {
-    max-height: 210px;
+    max-height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
     font-size: calc(10px + 2vmin);
   }
 
@@ -67,11 +67,11 @@ body {
 
   .App-logo {
     max-height: 10vh;
-    pointer-events: none;
   }
 
-  .text-center {
-    text-align: center;
+  .App-logo:hover {
+    cursor: pointer;
+    filter: contrast(0.2);
   }
 
   #rank {
@@ -102,20 +102,22 @@ body {
   th {
     // border: 1px solid rgb(255, 253, 253);
     padding: 13px;
-    border-bottom: 1px solid rgb(80, 79, 79);
+    border-bottom: 1px solid rgb(26, 26, 26);
   }
 
 
   th {
-    font-size: 15px;
+    border-top: 1px solid rgb(26, 26, 26);
+    font-size: 14px;
     text-transform: uppercase;
     padding: 2px;
+    background-color: #131313;
   }
 
 
   td {
     width: 111px;
-    font-size: 0.781rem;
+    font-size: 1rem;
   }
 
   tbody tr:hover {
@@ -132,14 +134,11 @@ body {
 
   .App-footer {
     display: flex;
-    // flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
     height: 5vh;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: floor($number: 0);
   }
 
   .blink {
