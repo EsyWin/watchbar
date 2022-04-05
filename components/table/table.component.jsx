@@ -55,9 +55,10 @@ class Table extends React.Component {
             return (
               <tr key={token.token_id}>
                 {/* <td>#</td> */}
-                <td></td>
+                <td id="rank"></td>
 
                 <td id="symbol" className="symbol">{token["symbol"]}</td>
+                <td id="price"></td>
                 <td id="tokenId" className="tokenId">
                   <a
                     href={`${explorerUrl}/${token.token_id}`}
@@ -69,14 +70,13 @@ class Table extends React.Component {
                   </a>
                 </td>
                 {/* <td>{this.state.list.id}</td> */}
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="mcap"></td>
+                <td id="24V"></td>
+                <td id="mSupply"></td>
+                <td id="cSupply"></td>
+                <td id="holders"></td>
+                <td id="decimals"></td>
+                <td id="txns"></td>
               </tr>
             );
           })}
