@@ -22,13 +22,18 @@ body {
   font-weight: 300;
   text-shadow: #000 1.1px 1.1px 1.1px;
 
-  a,
-  a:visited {
-    color: rgb(24, 133, 223);
+  a {
+    color: rgb(39, 122, 231);
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
   }
+
+  a:hover {
+    color: rgb(30, 96, 182)
+  }
+
+
 
   .App-link {
     font-weight: 800;
@@ -89,6 +94,7 @@ body {
     flex-direction: column;
   }
 
+
   thead,
   tbody {
     width: 100%;
@@ -101,11 +107,13 @@ body {
     border-bottom: 1px solid rgb(80, 79, 79);
   }
 
+
   th {
     font-size: 15px;
     text-transform: uppercase;
     padding: 2px;
   }
+
 
   td {
     width: 111px;
@@ -114,10 +122,6 @@ body {
 
   td+#tokenId {
     text-decoration: underline;
-  }
-
-  td+#tokenId :hover {
-    color: rgb(17, 87, 145);
   }
 
   h1.symbol {
