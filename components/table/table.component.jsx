@@ -8,7 +8,7 @@ class Table extends React.Component {
     this.state = {
       tokenList: [],
       tokens: [],
-      baseURL: "https://mainnet-public.mirrornode.hedera.com/api/v1/tokens",
+      baseURL: "https://mainnet-public.mirrornode.hedera.com/api/v1/tokens/"
     };
   }
 
@@ -35,17 +35,30 @@ class Table extends React.Component {
         <thead>
           <tr>
             {/* <th>#</th> */}
-            <th>symbol</th>
-            <th>token id</th>
+            <th id="rank">Rank</th>
+            <th id="symbol">Symbol</th>
+            <th id="price">Price</th>
+            <th id="tokenId">Token id</th>
+            <th id="mcap">Marketcap</th>
+            <th id="24V">24h Volume</th>
+            <th id="mSupply">Max supply</th>
+            <th id="cSupply">Circulating supply</th>
+            <th id="holders">Holders</th>
+            <th id="decimals">Decimals</th>
+            <th id="txns">Transfers</th>
             {/* <th>supply</th> */}
           </tr>
+        </thead>
+        <tbody>
           {this.state.tokens.map((token) => {
             const explorerUrl = "https://app.dragonglass.me/hedera/tokens";
             return (
               <tr key={token.token_id}>
                 {/* <td>#</td> */}
-                <td className="symbol">{token["symbol"]}</td>
-                <td className="symbol">
+                <td></td>
+
+                <td id="symbol" className="symbol">{token["symbol"]}</td>
+                <td id="tokenId" className="tokenId">
                   <a
                     href={`${explorerUrl}/${token.token_id}`}
                     target="_blank"
@@ -56,10 +69,18 @@ class Table extends React.Component {
                   </a>
                 </td>
                 {/* <td>{this.state.list.id}</td> */}
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             );
           })}
-        </thead>
+        </tbody>
       </table>
     );
   }

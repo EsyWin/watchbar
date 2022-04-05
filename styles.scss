@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;800&family=Urbanist:wght@300;400&display=swap");
+
 *,
 *::before,
 *::after {
@@ -39,12 +40,14 @@ body {
     padding: 3px;
     border-radius: 3px;
   }
+
   .jumbotron {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
   .App-header {
     max-height: 210px;
     display: flex;
@@ -58,6 +61,7 @@ body {
     font-family: "Source Code Pro", monospace;
     margin-bottom: 0.781rem;
   }
+
   .App-logo {
     max-height: 10vh;
     pointer-events: none;
@@ -68,7 +72,6 @@ body {
   }
 
   .Table-Container {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -76,40 +79,32 @@ body {
   }
 
   table {
-    // border: 1px solid #e00;
+    border: 1px solid #e00;
     text-align: center;
-    max-width: 33vw;
-    border-radius: 3px;
+    border-collapse: collapse;
     padding: 11px;
+    flex-direction: column;
+  }
 
-    tr {
-      display: flex;
-      border-left: 1px solid black;
-    }
+  thead,
+  tbody {
+    width: 100%;
+  }
 
-    td {
-      width: 100%;
-      border-top: 1px solid black;
-      border-right: 1px solid black;
-      padding: 1.1px;
-    }
+  td,
+  th {
+    border: 1px solid black;
+    padding: 1.1px;
+  }
 
-    tr:last-of-type {
-      border-bottom: 1px solid black;
-    }
+  th {
+    text-transform: uppercase;
+    padding: 1.1px;
+  }
 
-    th {
-      width: 100%;
-      text-transform: uppercase;
-      border-right: 1px solid black;
-      border-top: 1px solid black;
-      padding: 1.1px;
-    }
-
-    td {
-      width: 111px;
-      font-size: 0.781rem;
-    }
+  td {
+    width: 111px;
+    font-size: 0.781rem;
   }
 
   h1.symbol {
@@ -132,11 +127,13 @@ body {
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
   }
+
   @keyframes blink-animation {
     to {
       visibility: hidden;
     }
   }
+
   @-webkit-keyframes blink-animation {
     to {
       visibility: hidden;
