@@ -9,9 +9,9 @@ import Footer from "../components/footer/footer.component";
 function Homepage(props) {
   return (
     <>
-      <div className="navbar">
-        <Header />
+      <div className="header">
         <Ticker />
+        <Header />
       </div>
       <div className="jumbotron">
         <h1 className="text-center title">{props.blogTitle}</h1>
@@ -21,11 +21,5 @@ function Homepage(props) {
     </>
   );
 }
-
-Homepage.getInitialProps = () => {
-  return {
-    blogTitle: "WATCĦBAR",
-  };
-};
 
 export default Homepage;

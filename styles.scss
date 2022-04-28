@@ -22,14 +22,14 @@ body {
   font-weight: 300;
   text-shadow: #000 1.1px 1.1px 1.1px;
 
-  a {
+  tbody a {
     color: rgb(151, 154, 160);
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
   }
 
-  a:hover {
+  tbody a:hover {
     color: rgb(128, 130, 134)
   }
 
@@ -47,31 +47,105 @@ body {
   .jumbotron {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    bottom: 40px;
   }
 
-  .App-header {
-    max-height: 300px;
-    display: flex;
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+
+  .NavBar {
+    max-height: 40px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid red;
+  }
+
+  .search {
+    float: right;
+    position: relative;
+    bottom: 55px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  input {
+    padding: 3px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .search button {
+    color: white;
+    background: grey;
+    cursor: pointer;
+    position: relative;
+    padding: 3px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 16px;
+  }
+
+  .search button:hover {
+    background: rgb(83, 83, 83);
+  }
+
+
+  .NavBar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .NavBar th {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .NavBar .name {
+    bottom: 17px;
+    position: relative;
+  }
+
+  .NavBar .navname {
+    left: 150px;
+    bottom: 34px;
+    position: relative;
+  }
+
+  .NavBar th.navname {
+    padding-right: 15px;
+    color: white;
+  }
+
+  .App-logo {
+    height: 40pxx;
+    width: 40px;
+    justify-content: left;
+  }
+
+  .Logo {
+    width: 120px;
+    margin: 0;
+  }
+
+  .Logo:hover {
+    cursor: pointer;
+    filter: contrast(0.2);
+  }
+
+  .ticker-container {
     flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    font-size: calc(10px + 2vmin);
   }
 
   h1.title {
     font-family: "Source Code Pro", monospace;
     margin-bottom: 0.781rem;
-  }
-
-  .App-logo {
-    max-height: 10vh;
-  }
-
-  .App-logo:hover {
-    cursor: pointer;
-    filter: contrast(0.2);
   }
 
   #rank {
@@ -92,7 +166,6 @@ body {
     flex-direction: column;
   }
 
-
   thead,
   tbody {
     width: 100%;
@@ -100,20 +173,17 @@ body {
 
   td,
   th {
-    // border: 1px solid rgb(255, 253, 253);
     padding: 13px;
     border-bottom: 1px solid rgb(26, 26, 26);
   }
-
 
   th {
     border-top: 1px solid rgb(26, 26, 26);
     font-size: 14px;
     text-transform: uppercase;
-    padding: 2px;
+    padding: 1px;
     background-color: #131313;
   }
-
 
   td {
     width: 111px;
