@@ -8,8 +8,8 @@ import Footer from "../components/footer/footer.component";
 
 function Homepage(props) {
   return (
-    <>
-      <div className="header">
+    <div>
+      <div className="Topbar">
         <Ticker />
         <Header />
       </div>
@@ -18,7 +18,7 @@ function Homepage(props) {
         <Table />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

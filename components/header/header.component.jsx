@@ -13,16 +13,18 @@ const Header = () => {
         </th>
         <th>
           <div className="name">
-            WATCĦBAR
+            <a href="#">WATCĦBAR</a>
           </div>
         </th>
       </div>
-      <th className="navname"><a href="#">team</a></th>
-      <th className="navname"><a href="#">whitepaper</a></th>
-      <form className="search">
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
-      </form>
+      <div className="links">
+        <th className="navname"><a href="#">team</a></th>
+        <th className="navname"><a href="#">whitepaper</a></th>
+        <form className="search">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </form>
+      </div>
     </header>
   );
 };

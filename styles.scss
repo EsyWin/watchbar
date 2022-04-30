@@ -60,9 +60,10 @@ body {
 
   .NavBar {
     max-height: 40px;
-    width: 100%;
-    text-align: left;
-    border: 1px solid red;
+    width: 1225px;
+    border-top: 1px solid rgb(48, 48, 48);
+    border-bottom: 1px solid rgb(48, 48, 48);
+
   }
 
   .search {
@@ -113,14 +114,18 @@ body {
   }
 
   .NavBar .navname {
-    left: 150px;
+    left: 250px;
     bottom: 34px;
     position: relative;
   }
 
   .NavBar th.navname {
-    padding-right: 15px;
+    padding-right: 50px;
     color: white;
+  }
+
+  .links a:hover {
+    filter: contrast(0.2);
   }
 
   .App-logo {
@@ -136,11 +141,20 @@ body {
 
   .Logo:hover {
     cursor: pointer;
-    filter: contrast(0.2);
   }
 
   .ticker-container {
     flex-direction: row;
+    padding: 1px;
+  }
+
+  .ticker-container th {
+    padding-right: 200px;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
   }
 
   h1.title {

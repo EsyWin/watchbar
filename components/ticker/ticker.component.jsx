@@ -49,9 +49,15 @@ class Ticker extends Component {
   render() {
     return (
       <div className="ticker-container">
-        <span className="ticker">
+        <th className="ticker">
           Ħ <span className="blink">:</span> $ {this.state.usd}
-        </span>
+        </th>
+        <th className="marketcap">
+          Market cap:
+        </th>
+        <th className="vol">
+          24h Vol
+        </th>
       </div>
     );
   }
