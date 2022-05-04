@@ -8,20 +8,18 @@ import Footer from "../components/footer/footer.component";
 
 function Homepage(props) {
   return (
-    <div className="jumbotron">
-      <Header />
-      <Ticker />
-      <h1 className="text-center title">{props.blogTitle}</h1>
-      <Table />
-      <Footer />
+    <div>
+      <div className="Topbar">
+        <Ticker />
+        <Header />
+      </div>
+      <div className="jumbotron">
+        <h1 className="text-center title">{props.blogTitle}</h1>
+        <Table />
+        <Footer />
+      </div>
     </div>
   );
 }
-
-Homepage.getInitialProps = () => {
-  return {
-    blogTitle: "WATCĦBAR",
-  };
-};
 
 export default Homepage;
