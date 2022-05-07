@@ -8,6 +8,7 @@ import Footer from "../components/footer/footer.component";
 import { ReactDOM } from "react-dom";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Team from "../pages/team.js"
+import Whitepaper from "../pages/whitepaper.js"
 
 const routes = (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const routes = (
       <Switch>
         <Route path='/' component={Homepage} exact={true} />
         <Route path='/team' component={Team} />
+        <Route path='/whitepaper' component={Whitepaper} />
       </Switch>
     </div>
   </BrowserRouter>

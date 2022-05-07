@@ -20,7 +20,7 @@ const Header = () => {
       </div>
       <div className="links">
         <th className="navname"><a href="/team">team</a></th>
-        <th className="navname"><a href="#">whitepaper</a></th>
+        <th className="navname"><a href="/whitepaper">whitepaper</a></th>
         <form className="search">
           <input type="text" placeholder="Search" />
           <button>Search</button>
