@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
         </th>
       </div>
       <div className="links">
-        <th className="navname"><a href="#">team</a></th>
+        <th className="navname"><a href="/team">team</a></th>
         <th className="navname"><a href="#">whitepaper</a></th>
         <form className="search">
           <input type="text" placeholder="Search" />
