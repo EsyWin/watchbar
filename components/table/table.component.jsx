@@ -34,7 +34,6 @@ class Table extends React.Component {
       <table className="Table-Container">
         <thead>
           <tr>
-            {/* <th>#</th> */}
             <th id="rank">#</th>
             <th id="symbol">Symbol</th>
             <th id="price">Price</th>
@@ -45,7 +44,6 @@ class Table extends React.Component {
             <th id="cSupply">Circulating supply</th>
             <th id="holders">Holders</th>
             <th id="txns">Transfers</th>
-            {/* <th>supply</th> */}
           </tr>
         </thead>
         <tbody>
@@ -54,8 +52,8 @@ class Table extends React.Component {
             return (
               <tr key={token.token_id}>
                 {/* <td>#</td> */}
-                <td id="rank"></td>
-                <td id="symbol" className="symbol">{token["symbol"]}</td>
+                <td id="rank">#</td>
+                <td id="symbol" className="symbol"><a href="#" className="symbolLink">{token["symbol"]}</a></td>
                 <td id="price"></td>
                 <td id="tokenId" className="tokenId">
                   <a
@@ -68,7 +66,8 @@ class Table extends React.Component {
                   </a>
                 </td>
                 {/* <td>{this.state.list.id}</td> */}
-                <td id="mcap"></td>
+                <td id="mcap">
+                </td>
                 <td id="24V"></td>
                 <td id="mSupply"></td>
                 <td id="cSupply"></td>
