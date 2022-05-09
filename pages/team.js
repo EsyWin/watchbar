@@ -3,7 +3,7 @@ import React from "react";
 function Team() {
   return (
     <>
-      <h1>Meet our Ðevs</h1>
+      <h1>Meet our Ðevs noobs</h1>
 
       <p>
         I'm a full-stack engineer with 13+ years of experience. I started my
